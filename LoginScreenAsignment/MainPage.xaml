@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginScreenAsignment.MainPage"
+    >
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="25"
+            Padding="30,0"
+            VerticalOptions="Center"
+            >
+            <Label Text="User name"/>
+            <Entry
+                x:Name="UserNameBox"
+                Placeholder="Please enter your user name"/>
+            <Label Text="Password"/>
+            <Entry
+                x:Name="PasswordBox"
+                Placeholder="Please enter your password"
+                   IsPassword="True"
+                   />
+            <CheckBox
+                x:Name="ShowPasswordCheckBox"
+                CheckedChanged="CheckBox_CheckedChanged"
+                SemanticProperties.Description="Show password"
+                />
+            <Button Text="Have you forget your password?"/>
+            <Button
+                x:Name="LoginButton"
+                Text="Login"
+                Clicked="LoginButton_Clicked"
+                />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
