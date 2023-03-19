@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoginScreenAsignment.SecondPage"
+             Title="SecondPage"
+    >
+    <ScrollView
+        Padding="5"
+        Margin="5"
+        VerticalOptions="Center"
+        HorizontalOptions="Center"
+        >
+        <VerticalStackLayout
+            Spacing="5"
+                    Padding="5"
+        Margin="5"
+        VerticalOptions="Center"
+        HorizontalOptions="Center"
+>
+            <Button
+    VerticalOptions="Center"
+    HorizontalOptions="Center"
+    x:Name="LogOutButton"
+    Text="LogOut"
+    Clicked="LogOutButton_Clicked"
+    />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
